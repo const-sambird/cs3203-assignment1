@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <h1>Assignment 1</h1>
+    <hr>
+
+    <h2>Tweets</h2>
+    <h5>To Create a Tweet,
+        Enter "ID;Text"
+        In That Exact Format
+    </h5>
+    
+    <button id="get-tweets-button">Get Tweets</button>
+    <form id="create-form">
+        <input type="text" id="create-input">
+        <button>Create Tweet</button>
+
+    </form>
+     <form id="delete-form">
+         <input type="number" id="delete-input">
+         <button id='delete-button'>Delete Tweet</button>
+
+   </form>
+    <table id="tweettable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Text</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody id="tweetbody"></tbody>
+    </table>
+   <hr>
+
+
+    <h2>Users</h2>
+    <h5>To Change Screen Name,
+        Enter "Name;NewScreenName"
+        In That Exact Format
+    </h5>
+
+    <button id="get-button">Get Users</button>
+    <form id="update-user">
+        <input type="text" id="update-input">
+        <button id="update-button">Update User</button>
+    </form>
+    <table>
+        <thead>
+            <tr height="px 50%">
+                <th>ID</th>
+                <th>Screen Name</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="namebody"></tbody>
+    </table>
+    <hr>
+
+    <h2>Search for a Tweet</h2>
+    <button id="get-searched-tweets">Recently Searched</button>
+    <form id="search-form">
+        <input type="number" id="search-input">
+        <button id="searchsubmit">Search</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Text</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody id="searchbody"></tbody>
+    </table>
+    <hr>
+   
+    <script src="jquery.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+    
